@@ -64,7 +64,7 @@ export default class SignupForm extends Component {
           placeholder='Email'
           keyboardType='email-address'
           placeholderTextColor='#34495e'
-          returnKeyType='go'
+          returnKeyType='next'
           autoCapitalize='none'
           autoCorrect={false}
           onSubmitEditing={() => this.usernameInput.focus()}
