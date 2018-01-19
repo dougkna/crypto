@@ -3,10 +3,13 @@ import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-nativ
 import { server } from '../../config/data';
 
 export default class LoginForm extends Component {
-  state = {
-    username: '',
-    password: '',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: '',
+    };
+  }
   
   handleSubmit = (e) => {
     e.preventDefault();

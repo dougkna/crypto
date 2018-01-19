@@ -5,9 +5,12 @@ import { List, ListItem, Button, Avatar, Icon } from 'react-native-elements';
 import { symbols, getIcon } from '../../config/data';
 
 export default class Crypto extends Component {
-  state = {
-    loading: true,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    };
+  }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.screenProps.currencies) {

@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
-const jQuery = require('jquery');
 import { server } from '../../config/data';
 
 export default class SignupForm extends Component {
-  state = {
-    username: '',
-    email: '',
-    password: '',
-    cryptos: ['BTC', 'ETH', 'XRP', 'BCH', 'LTC'],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      email: '',
+      password: '',
+      cryptos: ['BTC', 'ETH', 'XRP', 'BCH', 'LTC'],
+    };
+  }
 
   validateInputBeforeSubmit = (e) => {
     if (/[a-zA-Z0-9]+@\S+\.\S+/.test(this.state.email)

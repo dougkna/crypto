@@ -5,10 +5,6 @@ import { StyleSheet, Text, View, Image, ScrollView,
 import LoginForm from './LoginForm';
 
 export default class Login extends Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
   signup = () => {
     this.props.navigation.navigate('Signup');
   };

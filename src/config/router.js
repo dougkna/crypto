@@ -1,9 +1,9 @@
 import React from 'react';
-import { StackNavigator, TabNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator, HeaderBackButton } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
 import LoginScreen from '../components/Login/Login';
-import SignupScreen from '../components/Screens/Signup';
+import SignupScreen from '../components/Login/Signup';
 
 import CryptoScreen from '../components/Screens/Crypto';
 import CryptoDetailScreen from '../components/Screens/CryptoDetail';
@@ -67,6 +67,19 @@ const MainNavigator = TabNavigator({
   }
 });
 
+//This navigator is inside Auth
+const navigationOptions = ({ navigation }) => ({
+  headerTitle: 'Signup',
+  headerLeft: <HeaderBackButton onPress={() => navigation.goBack(null)} />,
+})
+
+const SignupNavigator = StackNavigator({
+  Signup: {
+    screen: SignupScreen,
+    navigationOptions
+  },
+});
+
 //This is the parent navigator prior to login/signup
 export const Auth = StackNavigator({
   Login: {
@@ -76,7 +89,7 @@ export const Auth = StackNavigator({
     },
   },
   Signup: {
-    screen: SignupScreen,
+    screen: SignupNavigator,
     navigationOptions: {
       headerTitle: 'Signup',
     },
