@@ -15,4 +15,4 @@ Scan the QR code with your Expo mobile app to load the project immediately.
 
 <img src="https://user-images.githubusercontent.com/22410733/35135038-501fb79a-fc8f-11e7-8cf0-a6506f347f30.png" width="386">
 
-This is a tutorial React Native app to show how some of the major tools from React Navigation and React Native Elements are used.
+This is a tutorial React Native app to show how some of the major tools from React Navigation and React Native Elements are used. **_The Expo demo contains more features than what is shown in this repo._**
