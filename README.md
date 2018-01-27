@@ -3,7 +3,9 @@ Learn React Native, React Navigation, and React Native Elements all at once!
 
 Quickly build a mobile app with basic signup/login screens with some common routing (tabs, stacks, & modals) that you see in most apps.
 
-<a href="https://imgflip.com/gif/22yg8u"><img src="https://i.imgflip.com/22yg8u.gif" title="made at imgflip.com"/></a>
+### Tutorial vs Finished App
+![crypto-tutorial](https://user-images.githubusercontent.com/22410733/35467541-4f68b94c-02c4-11e8-8538-55c88a12c8a4.gif)
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/22410733/35467590-4d2746de-02c5-11e8-8f3e-0909638936d8.gif)
 
 ## Docs
 * This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
@@ -15,6 +17,4 @@ This is a tutorial React Native app to show how some of the major tools from Rea
 
 <img width="397" alt="screen shot 2018-01-26 at 1 55 48 pm" src="https://user-images.githubusercontent.com/22410733/35462449-d3f96ad6-02a0-11e8-99ac-5fcdb0a691ca.png">
 
-### Demo GIF
 
-<a href="https://imgflip.com/gif/23ffjr"><img src="https://i.imgflip.com/23ffjr.gif" title="made at imgflip.com"/></a>
